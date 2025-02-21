@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="assets/images/favicon.png" />
+    <title>Send IB Requests | JustStake</title>
+    <!-- Bootstrap 4.1.3-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <!-- Bootstrap-extend -->
+    <link rel="stylesheet" href="assets/css/bootstrap-extend.css" />
+    <!-- theme style -->
+    <link rel="stylesheet" href="assets/css/master_style.css" />
+    <link rel="stylesheet" href="assets/css/dashlite.css" />
+    <!-- Custom style -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <!--dark-mode-->
+  <body
+    class="nk-body bg-lighter npc-general has-sidebar no-touch nk-nio-theme">
+    <script>
+      $(function () {
+        setTimeout(() => {
+          $("#pageLoading").hide();
+          $("html, body").css("overflowY", "auto");
+        }, 2500);
+      });
+    </script>
+    <!-------------- Ends Here ------------------------------>
+    <div class="pre-load" id="pageLoading" style="display: none"></div>
+    <!-------------- Ends Here ------------------------------>
+    <div class="nk-app-root">
+      <!-- main @s -->
+      <div class="nk-main">
+        <!-- sidebar @s -->
+        <div
+          class="nk-sidebar nk-sidebar-fixed is-light"
+          data-content="sidebarMenu">
+          <!--is-dark-->
+          <div class="nk-sidebar-element nk-sidebar-head">
+            <div class="nk-sidebar-brand">
+              <a href="index.html" class="logo-link nk-sidebar-logo">
+                <img
+                  class="logo-light- logo-img"
+                  src="assets/images/logo.svg"
+                  alt="logo" />
+              </a>
+            </div>
+            <div class="nk-menu-trigger mr-n2">
+              <a
+                href="javascript:void(0)"
+                class="nk-nav-toggle nk-quick-nav-icon d-xl-none"
+                data-target="sidebarMenu">
+                <em class="icon ni ni-arrow-left"></em>
+              </a>
+            </div>
+          </div>
+          <!-- .nk-sidebar-element -->
+          <div class="nk-sidebar-element nk-sidebar-body">
+            <div class="nk-sidebar-content">
+              <div class="nk-sidebar-menu" data-simplebar="init">
+                <div class="simplebar-wrapper">
+                  <div class="simplebar-height-auto-observer-wrapper">
+                    <div class="simplebar-height-auto-observer"></div>
+                  </div>
+                  <div class="simplebar-mask">
+                    <div class="simplebar-offset">
+                      <div
+                        class="simplebar-content-wrapper"
+                        tabindex="0"
+                        role="region"
+                        aria-label="scrollable content">
+                        <div class="simplebar-content">
+                          <!-- sidebar menu -->
+                          <ul class="nk-menu">
+                            <li
+                              class="nk-menu-item has-sub active current-page">
+                              <a
+                                class="nk-menu-link"
+                                href="index.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-dashboard"></em>
+                                </span>
+                                <span>Dashboard</span>
+                              </a>
+                            </li>
+                            <li class="nk-menu-item has-sub">
+                              <a
+                                class="nk-menu-link"
+                                href="profile.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-user-alt"></em>
+                                </span>
+                                <span>My Profile</span>
+                              </a>
+                            </li>
+                            <li class="nk-menu-item has-sub">
+                              <a
+                                class="nk-menu-link"
+                                href="my-accounts.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-account-setting"></em>
+                                </span>
+                                <span>Manage Accounts</span>
+                              </a>
+                            </li>
+                            <li class="nk-menu-item has-sub">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-chart-down"></em>
+                                </span>
+                                <span>All Trades</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="live-trades.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Live Trades</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="demo-trades.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Demo Trades</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="downline-trades.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Downline's Trades</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="network-accounts.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Network Accounts</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item has-sub">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-sign-dollar"></em>
+                                </span>
+                                <span>Partner Transactions</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="ib-commissions.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Partner Commissions</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="lot-wise.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Lot Wise Commissions</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="ib-wallet-report.html"
+                                    data-original-title=""
+                                    title=""
+                                    >IB Wallet Reports</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item has-sub">
+                              <a
+                                class="nk-menu-link"
+                                href="send-ib-request.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-list-thumb-alt"></em>
+                                </span>
+                                <span>IB Requests</span>
+                              </a>
+                            </li>
+                            <li class="nk-menu-item has-sub">
+                              <a
+                                class="nk-menu-link"
+                                href="wallet-report.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-sign-dollar"></em>
+                                </span>
+                                <span>Wallet Transactions</span>
+                              </a>
+                            </li>
+                            <li class="nk-menu-item has-sub">
+                              <a
+                                class="nk-menu-link"
+                                href="network.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-users"></em>
+                                </span>
+                                <span>My Partners</span>
+                              </a>
+                            </li>
+                            <li class="nk-menu-item has-sub">
+                              <a
+                                class="nk-menu-link"
+                                href="my-tree.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-network"></em>
+                                </span>
+                                <span>Network Tree</span>
+                              </a>
+                            </li>
+                            <li class="nk-menu-item has-sub">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-sign-dollar"></em>
+                                </span>
+                                <span>My Fund</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <a
+                                  class="nk-menu-link nk-menu-toggle"
+                                  href="javascript:void(0)"
+                                  data-original-title=""
+                                  title="">
+                                  <span>Deposit</span>
+                                  <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                  </span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                  <li class="nk-menu-item">
+                                    <a
+                                      class="nk-menu-link"
+                                      href="deposit-request.html"
+                                      data-original-title=""
+                                      title=""
+                                      >Bank Wire</a
+                                    >
+                                  </li>
+                                  <li class="nk-menu-item">
+                                    <a
+                                      class="nk-menu-link"
+                                      href="deposit.html"
+                                      data-original-title=""
+                                      title=""
+                                      >USDT</a
+                                    >
+                                  </li>
+                                </ul>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="withdraw.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Withdraw</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="internal-transfer.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Internal Transfer</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item has-sub">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-link"></em>
+                                </span>
+                                <span>Terminal Download Link</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    target="_blank"
+                                    href="javascript:void(0)"
+                                    data-original-title=""
+                                    title=""
+                                    >Windows | Linux | MacOS</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    target="_blank"
+                                    href="javascript:void(0);"
+                                    data-original-title=""
+                                    title=""
+                                    >IOS</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    target="_blank"
+                                    href="javascript:void(0);"
+                                    data-original-title=""
+                                    title=""
+                                    >Android</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item has-sub">
+                              <a
+                                class="nk-menu-link"
+                                href="tickets.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-ticket"></em>
+                                </span>
+                                <span>My Tickets</span>
+                              </a>
+                            </li>
+                            <li class="nk-menu-item has-sub">
+                              <a
+                                class="nk-menu-link"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-signout"></em>
+                                </span>
+                                <span>Logout</span>
+                              </a>
+                            </li>
+                          </ul>
+                          <!-- .nk-menu -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="simplebar-placeholder" style="width: auto; height: 854px;"></div> -->
+                </div>
+                <!-- <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+                  <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
+                </div>
+                <div class="simplebar-track simplebar-vertical" style="visibility: hidden;">
+                  <div class="simplebar-scrollbar" style="height: 0px; display: none; transform: translate3d(0px, 0px, 0px);"></div>
+                </div> -->
+              </div>
+              <!-- .nk-sidebar-menu -->
+            </div>
+            <!-- .nk-sidebar-content -->
+          </div>
+          <!-- .nk-sidebar-element -->
+        </div>
+        <!-- sidebar @e -->
+        <!-- wrap @s -->
+        <div class="nk-wrap">
+          <!-- main header @s -->
+          <div class="mainhead nk-header nk-header-fixed is-light">
+            <div class="container-fluid">
+              <div class="nk-header-wrap">
+                <div class="nk-menu-trigger d-xl-none ml-n1">
+                  <a
+                    href="javascript:void(0)"
+                    class="nk-nav-toggle nk-quick-nav-icon"
+                    data-target="sidebarMenu">
+                    <em class="icon ni ni-menu"></em>
+                  </a>
+                </div>
+                <div class="nk-header-brand d-xl-none">
+                  <a href="index.html" class="logo-link">
+                    <img
+                      class="logo-light- logo-img"
+                      src="assets/images/favicon.png"
+                      alt="logo-dark" />
+                  </a>
+                </div>
+                <!-- .nk-header-brand -->
+                <div class="nk-header-news d-none d-xl-block">
+                  <div class="nk-news-list">
+                    <a class="nk-news-item" href="javascript:void(0)">
+                      <div class="nk-news-icon">
+                        <!--<em class="icon ni ni-happy"></em>-->
+                        <img src="assets/images/hand.png" />
+                      </div>
+                      <div class="nk-news-text">
+                        <h4>Hello Mike 01</h4>
+                        <p>Welcome to JustStake</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- .nk-header-news -->
+                <div class="toast-message" style="margin: auto"></div>
+                <div class="gtranslate">
+                  <div id="google_translate_element">
+                    <div class="skiptranslate goog-te-gadget" dir="ltr">
+                      <div id=":0.targetLanguage">
+                        <select
+                          class="goog-te-combo"
+                          aria-label="Language Translate Widget">
+                          <option value="">Select Language</option>
+                          <option value="zh-CN">Chinese (Simplified)</option>
+                          <option value="zh-TW">Chinese (Traditional)</option>
+                          <option value="hi">Hindi</option>
+                          <option value="ms">Malay</option>
+                          <option value="ru">Russian</option>
+                          <option value="th">Thai</option>
+                          <option value="vi">Vietnamese</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nk-header-tools">
+                  <ul class="nk-quick-nav">
+                    <!-- Notifications Bell start -->
+                    <li class="dropdown notification-dropdown">
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-toggle nk-quick-nav-icon"
+                        data-toggle="dropdown"
+                        aria-expanded="false">
+                        <div
+                          class="icon-status icon-status-info no-notify"
+                          id="newNotiBell">
+                          <img src="assets/images/solar_bell-bold.svg" />
+                          <!--<em class="icon ni ni-bell"></em>-->
+                        </div>
+                      </a>
+                      <div
+                        class="dropdown-menu dropdown-menu-xl dropdown-menu-right">
+                        <div class="dropdown-head">
+                          <span class="sub-title nk-dropdown-title"
+                            >Notifications</span
+                          >
+                          <!-- <a href="#">Mark All as Read</a> -->
+                        </div>
+                        <div class="dropdown-body">
+                          <div class="nk-notification" id="notificationPanel">
+                            <div class="nk-notification-item dropdown-inner">
+                              <div class="nk-notification-icon">
+                                <em
+                                  class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                              </div>
+                              <div class="nk-notification-content">
+                                <div class="nk-notification-text">
+                                  <a
+                                    href="javascript:void(0);"
+                                    style="color: #b6c6e3"
+                                    >Congratulation, Your account has been
+                                    successfully credit bonus!</a
+                                  >
+                                </div>
+                                <div class="nk-notification-time">
+                                  23 Jan, 2024 11:28:46 am
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- .nk-notification -->
+                        </div>
+                        <!-- .nk-dropdown-body -->
+                        <div class="dropdown-foot center">
+                          <a href="javascript:void(0)">View All</a>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Notifications Bell End -->
+                    <li class="dropdown user-dropdown">
+                      <a
+                        href="javascript:void(0)"
+                        class="dropdown-toggle"
+                        data-toggle="dropdown"
+                        aria-expanded="false">
+                        <div class="user-toggle">
+                          <div class="user-avatar sm">
+                            <img
+                              class="profile-user-img img-fluid mx-auto d-block"
+                              id="profile_img"
+                              src="assets/images/profile-icon-new.svg"
+                              alt="User profile picture" />
+                          </div>
+                          <div class="user-info d-none d-md-block">
+                            <div class="user-name dropdown-indicator">
+                              Mike 01
+                            </div>
+                            <!-- <div class="user-status">Administrator</div> -->
+                            <div class="userversec">
+                              <label>mike@mailinator.com</label>
+                              <div class="user-status text-success">
+                                Verified
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <div
+                        class="dropdown-menu dropdown-menu-md dropdown-menu-right dropdown-menu-s1">
+                        <div
+                          class="dropdown-inner user-card-wrap bg-lighter d-none d-md-block">
+                          <div class="user-card">
+                            <div class="user-avatar">
+                              <img
+                                class="profile-user-img img-fluid mx-auto d-block"
+                                id="profile_img"
+                                style="height: 40px"
+                                src="assets/images/default_user_icon.png"
+                                alt="User profile picture" />
+                            </div>
+                            <div class="user-info">
+                              <span class="lead-text">mike 01</span>
+                              <!-- <span class="sub-text">info@softnio.com</span> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown-inner">
+                          <ul class="link-list">
+                            <li>
+                              <a href="profile.html">
+                                <em class="icon ni ni-user-alt"></em>
+                                <span>View Profile</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="my-accounts.html">
+                                <em class="icon ni ni-setting-alt"></em>
+                                <span>My Account</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="dropdown-inner">
+                          <ul class="link-list">
+                            <li>
+                              <a href="javascript:void(0)">
+                                <em class="icon ni ni-signout"></em>
+                                <span>Sign out</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- .dropdown -->
+                  </ul>
+                  <!-- .nk-quick-nav -->
+                </div>
+                <!-- .nk-header-tools -->
+              </div>
+              <!-- .nk-header-wrap -->
+            </div>
+            <!-- .container-fliud -->
+          </div>
+          <!-- content @s -->
+          <div class="nk-content">
+            <div class="container-fluid">
+              <div class="nk-content-inner">
+                <div class="nk-content-body">
+                  <div class="nk-block-head nk-block-head-sm">
+                    <div class="nk-block-between">
+                      <div class="nk-block-head-content">
+                        <h3 class="nk-block-title page-title" id="page_heading">
+                          IB Requests
+                        </h3>
+                      </div>
+                      <!--nk-block-head-content-->
+                    </div>
+                    <!--nk-block-between-->
+                  </div>
+                  <!--nk-block-head-->
+                  <div class="nk-block">
+                    <div class="row g-gs">
+                      <div class="col-md-12">
+                        <div class="card card-bordered mb-3">
+                          <div class="card-inner-group">
+                            <div
+                              class="card-inner position-relative card-tools-toggle pb-4 pt-4">
+                              <div class="card-title-group">
+                                <div class="card-title">
+                                  <h6 class="title">
+                                    <span class="mr-2">Recent Requests</span>
+                                  </h6>
+                                </div>
+                                <!--card-title-->
+
+                                <form
+                                  action="javascript:void(0)"
+                                  class="form-element"
+                                  name="depositFormmt4"
+                                  id="depositFormmt4"
+                                  method="post"
+                                  accept-charset="utf-8">
+                                  <input
+                                    type="hidden"
+                                    name="platform"
+                                    value="mt4" />
+                                  <!-- <button type="submit" class="btn btn-primary" id="sendBtnMt4">Send MT4 Request</button> -->
+                                </form>
+                              </div>
+                              <!--card-title-group-->
+                            </div>
+                            <!--card-inner-->
+                            <div class="card-inner pl-0 pr-0">
+                              <div class="table-responsive rightsearch">
+                                <div
+                                  id="example1_wrapper"
+                                  class="dataTables_wrapper form-inline dt-bootstrap">
+                                  <div
+                                    id="example1_filter"
+                                    class="dataTables_filter">
+                                    <label
+                                      >Search:<input
+                                        type="search"
+                                        class="form-control input-sm"
+                                        placeholder=""
+                                        aria-controls="example1"
+                                    /></label>
+                                  </div>
+                                  <table
+                                    id="example1"
+                                    class="table table-bordered table-striped w-100 dataTable dtr-inline"
+                                    role="grid"
+                                    aria-describedby="example1_info"
+                                    style="width: 547px">
+                                    <thead>
+                                      <tr
+                                        class="nk-tb-item nk-tb-head"
+                                        role="row">
+                                        <th
+                                          class="nk-tb-col sorting_disabled"
+                                          rowspan="1"
+                                          colspan="1"
+                                          style="width: 46px">
+                                          Sr. No.
+                                        </th>
+                                        <th
+                                          class="nk-tb-col sorting_disabled"
+                                          rowspan="1"
+                                          colspan="1"
+                                          style="width: 56px">
+                                          Status
+                                        </th>
+                                        <th
+                                          class="nk-tb-col sorting_disabled"
+                                          rowspan="1"
+                                          colspan="1"
+                                          style="width: 152px">
+                                          Requested On
+                                        </th>
+                                        <th
+                                          class="nk-tb-col sorting_disabled"
+                                          rowspan="1"
+                                          colspan="1"
+                                          style="width: 153px">
+                                          Approved On
+                                        </th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr role="row" class="odd">
+                                        <td class="dtr-control">1</td>
+                                        <td>
+                                          <span class="text-success"
+                                            >Approved</span
+                                          >
+                                        </td>
+                                        <td>23 Jan, 2024 12:27 pm</td>
+                                        <td>23 Jan, 2024 12:28 pm</td>
+                                      </tr>
+                                    </tbody>
+                                    <tfoot>
+                                      <tr>
+                                        <th
+                                          class="nk-tb-col"
+                                          rowspan="1"
+                                          colspan="1">
+                                          Sr. No.
+                                        </th>
+                                        <th
+                                          class="nk-tb-col"
+                                          rowspan="1"
+                                          colspan="1">
+                                          Status
+                                        </th>
+                                        <th
+                                          class="nk-tb-col"
+                                          rowspan="1"
+                                          colspan="1">
+                                          Requested On
+                                        </th>
+                                        <th
+                                          class="nk-tb-col"
+                                          rowspan="1"
+                                          colspan="1">
+                                          Approved On
+                                        </th>
+                                      </tr>
+                                    </tfoot>
+                                  </table>
+                                  <div
+                                    id="example1_processing"
+                                    class="dataTables_processing panel panel-default"
+                                    style="display: none">
+                                    Processing...
+                                  </div>
+                                  <div
+                                    class="dataTables_info"
+                                    id="example1_info"
+                                    role="status"
+                                    aria-live="polite">
+                                    Showing 1 to 1 of 1 entries (filtered from
+                                    10 total entries)
+                                  </div>
+                                  <div
+                                    class="dataTables_paginate paging_simple_numbers"
+                                    id="example1_paginate">
+                                    <ul class="pagination">
+                                      <li
+                                        class="paginate_button previous disabled"
+                                        id="example1_previous">
+                                        <a
+                                          href="#"
+                                          aria-controls="example1"
+                                          data-dt-idx="0"
+                                          tabindex="0"
+                                          >Previous</a
+                                        >
+                                      </li>
+                                      <li class="paginate_button active">
+                                        <a
+                                          href="#"
+                                          aria-controls="example1"
+                                          data-dt-idx="1"
+                                          tabindex="0"
+                                          >1</a
+                                        >
+                                      </li>
+                                      <li
+                                        class="paginate_button next disabled"
+                                        id="example1_next">
+                                        <a
+                                          href="#"
+                                          aria-controls="example1"
+                                          data-dt-idx="2"
+                                          tabindex="0"
+                                          >Next</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <!--table-responsive-->
+                            </div>
+                            <!--card-inner-->
+                          </div>
+                          <!--card-inner-group-->
+                        </div>
+                        <!--card-->
+                      </div>
+                      <!--col-md-12-->
+                    </div>
+                    <!--row g-gs-->
+                  </div>
+                  <!--nk-block-->
+                </div>
+                <!--nk-content-body-->
+              </div>
+              <!--nk-content-inner-->
+            </div>
+            <!--container-fluid-->
+          </div>
+          <ul class="nk-menu showonmobile mobilemenu">
+            <li class="nk-menu-item has-sub active">
+              <a href="index.html">
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 25 24"
+                  width="25"
+                  height="24">
+                  <defs>
+                    <clippath clipPathUnits="userSpaceOnUse" id="cp1">
+                      <path d="m-32-753h375v812h-375z"></path>
+                    </clippath>
+                    <clippath clipPathUnits="userSpaceOnUse" id="cp2">
+                      <path d="m0.41 0h23.67v23.21h-23.67z"></path>
+                    </clippath>
+                  </defs>
+                  <style>
+                    .a {
+                      fill: #ffffff;
+                    }
+                  </style>
+                  <g clip-path="url(#cp1)">
+                    <g clip-path="url(#cp2)">
+                      <path
+                        class="a"
+                        d="m0.4 11.6v-0.4c0.1-0.4 0.3-0.6 0.6-0.9q5.3-5 10.6-10c0.5-0.4 0.8-0.4 1.3 0q4.8 4.6 9.6 9.1 0.6 0.6 1.2 1.1c0.4 0.4 0.5 0.8 0.3 1.3q-0.3 0.7-1.1 0.8-0.5 0-1 0-0.4 0-0.8 0v0.3q0 4.4 0 8.8c0 0.7-0.4 1.3-1.1 1.5q-0.1 0-0.1 0h-4.7c-0.4-0.2-0.5-0.5-0.5-1q0-2.9 0-5.8c0-0.4 0-0.4-0.4-0.4q-2.1 0-4.1 0c-0.4 0-0.4 0-0.4 0.4q0 2.9 0 5.8c0 0.5-0.1 0.8-0.6 1h-4.6c-1-0.3-1.2-0.7-1.2-1.7q0-4.3 0-8.7v-0.2q-0.9 0-1.7 0-0.8 0-1.2-0.7 0-0.1-0.1-0.3z"></path>
+                    </g>
+                  </g>
+                </svg>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nk-menu-item has-sub">
+              <a href="profile.html">
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 21 24"
+                  width="18">
+                  <defs>
+                    <clippath clipPathUnits="userSpaceOnUse" id="cp1">
+                      <path d="m-101-753h375v812h-375z"></path>
+                    </clippath>
+                    <clippath clipPathUnits="userSpaceOnUse" id="cp2">
+                      <path d="m0.61 0h19.55v23.45h-19.55z"></path>
+                    </clippath>
+                  </defs>
+                  <style>
+                    .a {
+                      fill: #ffffff;
+                    }
+                  </style>
+                  <g clip-path="url(#cp1)">
+                    <g clip-path="url(#cp2)">
+                      <path
+                        class="a"
+                        d="m10.4 23.4q-3 0-6 0-0.2 0-0.5 0-0.2 0-0.4-0.1-0.1 0-0.2-0.1-0.1 0-0.2 0-0.1-0.1-0.2-0.1-0.1 0-0.2-0.1 0 0-0.1 0-0.1-0.1-0.3-0.2-0.1-0.1-0.2-0.2c-0.1 0-0.2-0.1-0.3-0.2q-0.1-0.1-0.3-0.3-0.1-0.1-0.2-0.3-0.1-0.2-0.2-0.3-0.1-0.2-0.2-0.3 0-0.1 0-0.2-0.1-0.1-0.1-0.2 0 0 0 0 0-0.1-0.1-0.2 0-0.2 0-0.4 0 0 0 0-0.1-0.8-0.1-1.6c0-0.2 0-0.5 0.1-0.7q0-0.3 0-0.5 0-0.2 0.1-0.3c0-0.1 0-0.2 0-0.3q0-0.2 0.1-0.3 0 0 0-0.1 0-0.1 0-0.3 0.1-0.1 0.1-0.3 0 0 0 0 0-0.1 0.1-0.3 0 0 0-0.1 0.1-0.1 0.1-0.3 0 0 0 0 0-0.1 0.1-0.2 0-0.1 0-0.2 0.1-0.1 0.1-0.2 0-0.1 0.1-0.2 0 0 0-0.1 0.1-0.2 0.2-0.4 0.1-0.1 0.2-0.2 0-0.1 0.1-0.2 0.1-0.2 0.2-0.3 0 0 0.1-0.1 0.1-0.2 0.3-0.4 0.1-0.1 0.2-0.2 0.1-0.1 0.2-0.1 0.1-0.1 0.2-0.2 0.1 0 0.2-0.1 0.1-0.1 0.2-0.1 0.1-0.1 0.2-0.2 0.1 0 0.1 0 0.2-0.1 0.3-0.1 0.1 0 0.2-0.1 0 0 0 0 0.2 0 0.3 0 0.2-0.1 0.4-0.1 0 0 0 0 0.3-0.1 0.6-0.1 0.2 0 0.4 0.1 0.1 0.1 0.3 0.1 0.1 0.1 0.3 0.2 0.1 0.1 0.2 0.2 0.2 0.1 0.4 0.2 0.1 0.1 0.2 0.1 0.1 0.1 0.2 0.2 0.1 0 0.2 0.1 0.1 0 0.2 0.1 0 0 0.1 0 0.1 0.1 0.2 0.1 0.1 0 0.1 0.1 0.1 0 0.2 0 0.1 0 0.2 0.1 0.1 0 0.2 0.1 0 0 0 0 0.2 0 0.3 0 0.2 0.1 0.4 0.1 0 0 0.1 0 0.2 0 0.4 0c0.1 0 0.2 0 0.3 0q0.2 0 0.3 0 0.2 0 0.4-0.1 0 0 0 0 0.2 0 0.3 0 0.2-0.1 0.4-0.1 0.1-0.1 0.3-0.2 0.1 0 0.3-0.1 0.1 0 0.2-0.1 0.1 0 0.1 0 0.1-0.1 0.2-0.1 0.1-0.1 0.2-0.2 0.2-0.1 0.3-0.2 0.1 0 0.2-0.1 0.1 0 0.2-0.1 0.1-0.1 0.1-0.1 0.1-0.1 0.2-0.1 0.1-0.1 0.1-0.1 0.2-0.1 0.3-0.1 0 0 0.1 0c0.1 0 0.2-0.1 0.4-0.1 0.1 0.1 0.3 0 0.4 0.1q0.2 0 0.4 0 0 0 0 0.1 0.2 0 0.3 0 0.1 0 0.2 0.1 0.1 0 0.2 0 0.1 0.1 0.2 0.1 0.1 0.1 0.2 0.2 0.2 0 0.3 0.1 0.1 0.1 0.2 0.2 0.1 0 0.2 0.1 0.2 0.2 0.4 0.4 0.2 0.1 0.3 0.3 0.1 0.1 0.1 0.2 0.1 0.1 0.2 0.2 0.1 0.1 0.1 0.2 0.1 0.1 0.1 0.3 0.1 0.1 0.2 0.2 0 0.1 0.1 0.2 0 0.1 0 0.1 0.1 0.2 0.1 0.3 0.1 0.2 0.1 0.3 0.1 0.1 0.1 0.2 0 0.2 0.1 0.3 0 0 0 0 0 0.1 0 0.2 0.1 0.2 0.1 0.3 0 0 0 0.1 0.1 0.1 0.1 0.3 0 0.2 0.1 0.3 0 0 0 0.1 0 0.2 0 0.4 0.1 0.3 0.1 0.6 0 0 0 0.1 0.1 1 0.1 1.9-0.1 0.2-0.1 0.5 0 0.1 0 0.2-0.1 0.1-0.1 0.3-0.1 0.2-0.1 0.3-0.1 0.1-0.1 0.2-0.1 0.1-0.1 0.2-0.1 0.1-0.2 0.2 0 0.1-0.1 0.3-0.1 0.1-0.2 0.2-0.1 0.1-0.2 0.2-0.1 0.1-0.2 0.1-0.1 0.1-0.3 0.2-0.1 0.1-0.1 0.2-0.2 0-0.3 0.1 0 0-0.1 0-0.1 0.1-0.1 0.1-0.2 0.1-0.4 0.1-0.1 0.1-0.2 0.1 0 0 0 0-0.1 0-0.3 0.1c-0.1 0-0.3 0-0.4 0-0.2 0.1-0.3 0-0.5 0q-2.9 0-5.7 0z"></path>
+                      <path
+                        class="a"
+                        d="m10.2 0q0.3 0 0.5 0 0.2 0 0.4 0.1c0.1 0 0.2 0 0.3 0q0.1 0 0.2 0.1 0 0 0 0 0.2 0 0.4 0.1 0.2 0.1 0.4 0.1 0.2 0.1 0.4 0.2 0.1 0.1 0.2 0.1 0.2 0.1 0.3 0.2 0.1 0.1 0.2 0.2 0.1 0 0.2 0.1 0 0 0.1 0.1 0.2 0.2 0.5 0.4c0.1 0.1 0.1 0.2 0.2 0.3 0.2 0.1 0.2 0.3 0.3 0.4q0.1 0.1 0.2 0.3 0.1 0.1 0.2 0.2 0.1 0.2 0.1 0.3 0.1 0.1 0.1 0.2 0.1 0.1 0.1 0.2 0 0 0 0.1 0.1 0.1 0.1 0.3 0.1 0.1 0.1 0.3 0.1 0.3 0.1 0.6 0.1 0.2 0.1 0.4c0 0.2 0 0.3 0 0.5 0 0.2 0 0.4 0 0.6q-0.1 0.1-0.1 0.3 0 0.1-0.1 0.3 0 0.1 0 0.2 0 0.1-0.1 0.3 0 0.1-0.1 0.2 0 0.1-0.1 0.2 0 0.2-0.1 0.3 0 0.1-0.1 0.1 0 0.1-0.1 0.2-0.1 0.1-0.2 0.3-0.1 0.1-0.2 0.3-0.1 0.2-0.3 0.4-0.1 0-0.2 0.1-0.1 0.1-0.1 0.2-0.2 0.1-0.3 0.2-0.1 0.1-0.2 0.2-0.1 0.1-0.2 0.1-0.1 0.1-0.3 0.2-0.1 0.1-0.1 0.1-0.1 0.1-0.2 0.1-0.2 0.1-0.3 0.1-0.1 0.1-0.2 0.1 0 0-0.1 0.1-0.1 0-0.3 0-0.2 0.1-0.4 0.1-0.2 0.1-0.4 0.1c-0.2 0.1-0.5 0.1-0.7 0.1-0.3 0-0.6 0-0.9 0q-0.1 0-0.3-0.1-0.1 0-0.3-0.1 0 0 0 0-0.1 0-0.3 0-0.1-0.1-0.3-0.1-0.1-0.1-0.2-0.1 0 0-0.1 0-0.2-0.1-0.4-0.2-0.1-0.1-0.2-0.1-0.1-0.1-0.2-0.2-0.1 0-0.2-0.1-0.1-0.1-0.2-0.2-0.1 0-0.2-0.1-0.1-0.1-0.3-0.3-0.1-0.1-0.2-0.2-0.1-0.2-0.2-0.3-0.1-0.1-0.2-0.1-0.1-0.2-0.2-0.3 0-0.1-0.1-0.2-0.1-0.1-0.1-0.3-0.1 0-0.1-0.1-0.1-0.1-0.1-0.2-0.1-0.1-0.1-0.2 0 0 0-0.1-0.1-0.1-0.1-0.2 0-0.1-0.1-0.2 0-0.1 0-0.2-0.1-0.1-0.1-0.3 0 0 0 0 0-0.3-0.1-0.6c0-0.3 0-0.6 0-0.9q0-0.2 0-0.5 0.1-0.1 0.1-0.3 0-0.1 0.1-0.2 0 0 0 0 0-0.2 0-0.3 0.1-0.1 0.1-0.2 0-0.1 0.1-0.2 0-0.1 0-0.2 0.1-0.1 0.1-0.2 0.1-0.1 0.2-0.2 0-0.1 0.1-0.2 0.1-0.2 0.2-0.3 0.1-0.1 0.1-0.3 0.1-0.1 0.2-0.1 0.1-0.2 0.3-0.3 0.1-0.2 0.2-0.3 0.2-0.2 0.4-0.3 0.1-0.1 0.3-0.2 0.1-0.1 0.3-0.2 0.1-0.1 0.2-0.2 0.2 0 0.3-0.1 0.2-0.1 0.3-0.1 0.2-0.1 0.4-0.1 0-0.1 0-0.1 0.1 0 0.2 0 0.2 0 0.3-0.1 0 0 0 0 0.2 0 0.4 0 0.4-0.1 0.7-0.1 0 0 0 0z"></path>
+                    </g>
+                  </g>
+                </svg>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li class="nk-menu-item has-sub">
+              <a href="my-accounts.html">
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 27 25"
+                  width="27"
+                  height="25">
+                  <defs>
+                    <clippath clipPathUnits="userSpaceOnUse" id="cp1">
+                      <path d="m-177-751h375v812h-375z"></path>
+                    </clippath>
+                    <clippath clipPathUnits="userSpaceOnUse" id="cp2">
+                      <path d="m0.01 1h26.61v23.95h-26.61z"></path>
+                    </clippath>
+                  </defs>
+                  <style>
+                    .a {
+                      fill: #ffffff;
+                    }
+                  </style>
+                  <g clip-path="url(#cp1)">
+                    <g clip-path="url(#cp2)">
+                      <path
+                        class="a"
+                        d="m16.1 24.4q-0.1 0-0.1 0-0.2 0.1-0.5 0.1h-5.7-6q-0.2 0-0.5-0.1-0.2 0-0.4-0.1-0.1 0-0.2 0-0.1-0.1-0.2-0.1-0.1 0-0.2-0.1h-0.2q0 0-0.1-0.1-0.1-0.1-0.3-0.2-0.1 0-0.2-0.1-0.2-0.1-0.3-0.3-0.2-0.1-0.3-0.3-0.1-0.1-0.2-0.3-0.1-0.1-0.2-0.3-0.1-0.1-0.2-0.3 0-0.1 0-0.2-0.1 0-0.1-0.1 0 0 0-0.1 0-0.1-0.1-0.2 0-0.2 0-0.3 0 0 0-0.1-0.1-0.8-0.1-1.6 0-0.3 0.1-0.7 0-0.2 0-0.5 0-0.1 0.1-0.3 0-0.1 0-0.3 0-0.1 0.1-0.3 0-0.2 0-0.3 0.1-0.2 0.1-0.4 0 0 0 0 0-0.1 0.1-0.3 0 0 0-0.1l0.1-0.2q0 0 0 0 0-0.2 0.1-0.3 0-0.1 0-0.2 0.1-0.1 0.1-0.1 0-0.1 0.1-0.2 0-0.1 0-0.1 0.1-0.2 0.2-0.4 0.1-0.1 0.2-0.2 0-0.2 0.1-0.3 0.1-0.1 0.2-0.3 0 0 0.1-0.1 0.1-0.2 0.3-0.4 0.1-0.1 0.2-0.2 0.1-0.1 0.2-0.1 0.1-0.1 0.2-0.1 0.1-0.1 0.2-0.2 0.1-0.1 0.2-0.1 0.1-0.1 0.2-0.2 0.1 0 0.1 0 0.2-0.1 0.4-0.1 0 0 0.1-0.1h0.1 0.2l0.4-0.1q0 0 0 0 0.3-0.1 0.6-0.1 0.2 0 0.4 0.1 0.1 0.1 0.3 0.2 0.1 0 0.3 0.1 0.1 0.1 0.2 0.2 0.2 0.1 0.4 0.2 0.1 0.1 0.2 0.1 0.1 0.1 0.2 0.2 0.1 0 0.2 0.1 0.1 0 0.2 0.1 0.1 0 0.1 0 0.1 0.1 0.2 0.1 0.1 0 0.2 0.1 0 0 0.1 0 0.1 0.1 0.2 0.1l0.2 0.1h0.3l0.4 0.1q0 0 0.1 0 0.2 0 0.4 0c0.1 0 0.2 0 0.3 0q0.2 0 0.4 0 0.1 0 0.3-0.1h0.1q0.1 0 0.3 0 0.1-0.1 0.3-0.1 0.1-0.1 0.3-0.2 0.2 0 0.3 0 0.1-0.1 0.2-0.2 0.1 0 0.2 0 0-0.1 0.1-0.1 0.1-0.1 0.2-0.2 0.2-0.1 0.3-0.2 0.1 0 0.2-0.1 0.1 0 0.2-0.1 0.1 0 0.2-0.1 0.1-0.1 0.2-0.1 0-0.1 0.1-0.1 0.1 0 0.3-0.1 0 0 0 0c0.1 0 0.2-0.1 0.4-0.1q0.2 0.1 0.5 0.1 0.2 0 0.4 0.1 0.1 0 0.2 0 0.1 0 0.2 0.1h0.2q0.1 0.1 0.3 0.1 0.1 0.1 0.2 0.2 0.1 0 0.3 0.1 0.1 0.1 0.2 0.2 0.1 0 0.1 0.1 0.3 0.2 0.5 0.4 0.1 0.1 0.2 0.3 0 0 0.1 0-0.3 0-0.5 0c-0.8 0-1.5 0.4-1.9 1.2q-0.4 0.7-0.9 1.4c-0.5 1-0.3 2.1 0.5 2.9-0.3 0.2-0.4 0.5-0.5 0.6q0 0 0 0.1c-0.3 0.4-0.4 1-0.2 1.5q0 0 0 0.1 0.1 0.2 0.2 0.5c0.3 0.5 0.6 1 0.9 1.5q0.2 0.4 0.5 0.6z"></path>
+                      <path
+                        class="a"
+                        d="m9.6 1h0.5q0.2 0 0.4 0.1 0.1 0 0.3 0 0.1 0 0.2 0.1h0.1q0.1 0 0.3 0.1 0.2 0 0.4 0.1 0.2 0.1 0.4 0.2 0.1 0.1 0.2 0.1 0.2 0.1 0.3 0.2 0.1 0.1 0.3 0.2 0 0 0.1 0.1c0 0 0.1 0 0.1 0.1q0.3 0.2 0.5 0.4c0.1 0.1 0.1 0.2 0.2 0.3q0.2 0.2 0.3 0.4 0.2 0.1 0.3 0.3 0 0.1 0.1 0.2 0.1 0.2 0.1 0.3 0.1 0.1 0.2 0.2 0 0.1 0 0.2 0 0 0.1 0.1 0 0.1 0 0.3 0.1 0.1 0.1 0.3 0.1 0.3 0.1 0.6 0.1 0.2 0.1 0.4 0 0.2 0 0.5c0 0.2 0 0.4 0 0.6q0 0.1-0.1 0.3 0 0.2-0.1 0.3 0 0.1 0 0.2 0 0.1-0.1 0.3 0 0.1-0.1 0.2 0 0.1-0.1 0.3 0 0.1-0.1 0.2 0 0.1-0.1 0.1 0 0.1-0.1 0.2 0 0.1-0.1 0.3-0.2 0.2-0.3 0.3c-0.1 0.1-0.2 0.2-0.3 0.4q-0.1 0.1-0.1 0.2-0.1 0-0.2 0.1-0.1 0.1-0.3 0.2-0.1 0.1-0.2 0.2-0.1 0.1-0.2 0.1-0.1 0.1-0.3 0.2 0 0.1-0.1 0.1-0.1 0.1-0.2 0.1-0.2 0.1-0.3 0.2-0.1 0-0.2 0l-0.1 0.1q-0.1 0-0.2 0.1-0.2 0-0.4 0.1-0.3 0-0.5 0.1c-0.2 0-0.5 0-0.7 0q-0.4 0-0.9 0-0.1 0-0.3-0.1-0.1 0-0.3 0-0.1-0.1-0.3-0.1-0.1 0-0.3-0.1-0.1 0-0.2-0.1 0 0-0.1 0-0.2-0.1-0.4-0.2-0.1-0.1-0.2-0.1-0.1-0.1-0.1-0.1-0.1-0.1-0.3-0.2-0.1-0.1-0.2-0.2c-0.1 0-0.1 0-0.2-0.1q-0.1-0.1-0.3-0.3-0.1-0.1-0.2-0.2-0.1-0.2-0.2-0.3-0.1 0-0.2-0.1-0.1-0.1-0.2-0.3 0-0.1-0.1-0.2-0.1-0.1-0.1-0.2-0.1-0.1-0.1-0.2-0.1-0.1-0.1-0.2-0.1-0.1-0.1-0.1 0-0.1 0-0.2-0.1-0.1-0.1-0.2 0-0.1-0.1-0.1 0-0.2 0-0.3-0.1-0.1-0.1-0.3 0 0 0 0 0-0.3-0.1-0.6 0-0.4 0-0.9 0-0.2 0-0.5 0.1-0.1 0.1-0.2 0-0.2 0.1-0.3 0 0 0 0 0-0.2 0-0.3 0.1-0.1 0.1-0.2 0-0.1 0.1-0.1 0-0.1 0-0.2 0.1-0.2 0.1-0.3 0.1-0.1 0.2-0.2 0-0.1 0.1-0.2 0.1-0.2 0.2-0.3 0.1-0.1 0.1-0.3 0.1-0.1 0.2-0.1 0.1-0.2 0.3-0.3c0.1-0.1 0.1-0.2 0.2-0.3q0.2-0.1 0.4-0.3 0.1-0.1 0.3-0.2 0.1-0.1 0.3-0.2 0.1-0.1 0.2-0.1 0.2-0.1 0.3-0.2 0.2-0.1 0.3-0.1 0.2-0.1 0.4-0.2 0.1 0 0.2 0 0.2 0 0.3-0.1 0.2 0 0.5 0 0.3-0.1 0.6-0.1z"></path>
+                      <path
+                        fill-rule="evenodd"
+                        class="a"
+                        d="m26.5 21.5q-0.4 0.7-0.8 1.4-0.2 0.3-0.5 0.3-0.1 0-0.3 0-0.4-0.2-0.8-0.4-0.1 0-0.2 0-0.1 0-0.3 0.1-0.1 0.1-0.2 0.1c-0.4 0.1-0.5 0.4-0.5 0.8q0 0.3-0.1 0.6-0.1 0.5-0.6 0.5-0.4 0.1-0.8 0.1-0.5 0-0.9-0.1-0.5 0-0.6-0.5 0-0.5-0.1-0.9 0-0.2-0.2-0.3-0.2-0.1-0.4-0.3-0.2-0.1-0.3-0.1 0 0 0 0-0.2 0-0.3 0.1-0.4 0.1-0.8 0.3-0.1 0-0.3 0-0.2 0-0.4-0.2-0.5-0.8-0.9-1.5c0-0.1 0-0.2-0.1-0.4 0.1-0.1 0.2-0.3 0.3-0.4 0.2-0.2 0.5-0.4 0.8-0.6 0.1-0.1 0.1-0.2 0.1-0.3 0-0.2 0-0.4 0-0.6 0-0.2 0-0.3-0.1-0.4q-0.4-0.2-0.8-0.5-0.4-0.4-0.2-0.8 0.4-0.8 0.9-1.5 0.1-0.3 0.4-0.3 0.2 0 0.3 0.1 0.5 0.2 1 0.4 0 0 0 0 0.1 0 0.2-0.1 0 0 0 0c0.2-0.1 0.4-0.2 0.6-0.3 0.2-0.1 0.2-0.2 0.2-0.4q0.1-0.4 0.1-0.9c0.1-0.3 0.3-0.5 0.6-0.5q0.4 0 0.9 0 0.4 0 0.9 0 0.4 0 0.5 0.5 0 0.1 0 0.2c0.1 0.4 0 0.7 0.2 0.9 0.1 0.3 0.5 0.4 0.7 0.5q0.1 0.1 0.2 0.1 0.1 0 0.1 0 0.5-0.2 0.9-0.4 0.2-0.1 0.3-0.1 0.3 0 0.5 0.4 0.4 0.6 0.8 1.4c0.2 0.3 0.1 0.5-0.1 0.8q-0.4 0.3-0.8 0.5c-0.1 0.1-0.2 0.2-0.2 0.4 0.1 0.2 0 0.4 0.1 0.6 0 0.1 0 0.2 0.1 0.3q0.4 0.3 0.8 0.6 0.4 0.3 0.1 0.8zm-2.9-2c0-1.2-1-2.2-2.2-2.2-0.8 0-1.6 0.4-1.9 1.1q-0.3 0.5-0.3 1.1c0 0.4 0.1 0.9 0.4 1.2 0.4 0.6 1 1 1.8 1 1.2 0 2.2-1 2.2-2.2z"></path>
+                    </g>
+                  </g>
+                </svg>
+                <span>Accounts</span>
+              </a>
+            </li>
+            <li class="nk-menu-item has-sub">
+              <a href="live-trades.html">
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 23"
+                  width="24"
+                  height="23">
+                  <defs>
+                    <clippath clipPathUnits="userSpaceOnUse" id="cp1">
+                      <path d="m-258-753h375v812h-375z"></path>
+                    </clippath>
+                    <clippath clipPathUnits="userSpaceOnUse" id="cp2">
+                      <path d="m0.61 0h22.98v22.98h-22.98z"></path>
+                    </clippath>
+                  </defs>
+                  <style>
+                    .a {
+                      fill: #ffffff;
+                    }
+                  </style>
+                  <g clip-path="url(#cp1)">
+                    <g clip-path="url(#cp2)">
+                      <path
+                        class="a"
+                        d="m22.8 22.2q0.2 0 0.4 0c0.2 0 0.4 0.2 0.4 0.4 0 0.2-0.2 0.4-0.4 0.4q-0.1 0-0.2 0-10.9 0-21.8 0-0.1 0-0.1 0c-0.3 0-0.5-0.2-0.5-0.4 0-0.3 0.2-0.4 0.5-0.4q0.1 0 0.3 0v-0.3q0-3.2 0-6.3c0-0.9 0.5-1.3 1.3-1.3q1.5 0 3 0c0.8 0 1.2 0.5 1.2 1.2q0 3.2 0 6.4v0.3h2.4v-0.3q0-4.8 0-9.5c0-0.7 0.4-1.2 1-1.3q0.1 0 0.3 0 1.5 0 2.9 0c0.9 0 1.3 0.5 1.3 1.3q0.1 4.7 0 9.4v0.4h2.4v-0.3q0.1-6.7 0-13.4c0-0.9 0.6-1.4 1.4-1.4 1 0.1 1.9 0 2.9 0 0.8 0 1.3 0.5 1.3 1.3q0 6.7 0 13.4z"></path>
+                      <path
+                        class="a"
+                        d="m22.2 0.8q-0.2 0-0.4 0c-0.2 0-0.4-0.2-0.4-0.4 0-0.2 0.2-0.4 0.4-0.4q0.7 0 1.4 0c0.2 0 0.4 0.2 0.4 0.4q0 0.6 0 1.1c0 0.3-0.2 0.5-0.4 0.5-0.2 0-0.4-0.2-0.4-0.4 0-0.1 0-0.1 0-0.3-0.2 0.2-0.3 0.3-0.4 0.5q-3.5 3.5-7.8 5.8c-2.4 1.3-5 2.4-7.6 3-2 0.4-4 0.5-6 0.5-0.2 0-0.4-0.2-0.4-0.4 0-0.2 0.2-0.4 0.5-0.4q1 0 2.1 0c2.6-0.1 5-0.7 7.3-1.6q6.3-2.5 11.1-7.3 0.3-0.3 0.5-0.5 0.1 0 0.1-0.1z"></path>
+                    </g>
+                  </g>
+                </svg>
+                <span>Trades</span>
+              </a>
+            </li>
+            <li class="nk-menu-item has-sub">
+              <a
+                href="javascript:void"
+                class="nk-nav-toggle nk-quick-nav-icon"
+                data-target="sidebarMenu">
+                <img src="assets/images/more-icon.svg" />
+                <span>More</span>
+              </a>
+            </li>
+          </ul>
+          <!-- footer @s -->
+          <div class="nk-footer">
+            <div class="container-fluid">
+              <div class="nk-footer-wrap">
+                <div class="nk-footer-copyright">
+                  © 2025 JustStake. All Rights Reserved.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- footer @e -->
+        </div>
+        <!-- wrap @e -->
+      </div>
+      <!-- main @e -->
+    </div>
+    <!-- jQuery 3 -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- Bootstrap 4.1.3-->
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

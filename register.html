@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="assets/images/favicon.png" />
+    <title>Register | JustStake</title>
+    <!-- Bootstrap 4.1.3-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <!-- Bootstrap-extend -->
+    <link rel="stylesheet" href="assets/css/bootstrap-extend.css" />
+    <!-- theme style -->
+    <link rel="stylesheet" href="assets/css/master_style.css" />
+    <link rel="stylesheet" href="assets/css/dashlite.css" />
+    <!-- Custom style -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body
+    class="hold-transition login-page nk-body npc-default pg-auth no-touch nk-nio-theme">
+    <section class="login-section">
+      <div class="container">
+        <div class="row align-items-center justify-content-md-center">
+          <div class="col-xl-7 col-lg-8 col-md-12 col-12">
+            <div class="box box-body rounded">
+              <div class="login-block">
+                <div class="login-header">
+                  <div class="login-logo-right">
+                    <a href="#0"
+                      ><img src="assets/images/logo.svg" class="login-logo" />
+                    </a>
+                  </div>
+                  <div class="login-logo-left" style="text-align: center">
+                    <h1 class="text-center- login-text mb-3">
+                      Create an Account
+                    </h1>
+                  </div>
+                </div>
+                <form
+                  action="javascript:void(0)"
+                  name="regForm"
+                  method="post"
+                  accept-charset="utf-8">
+                  <div id="infoMessage"></div>
+                  <div class="row form-mb">
+                    <div class="col-md-12">
+                      <div
+                        class="form-group has-feedback"
+                        style="margin-bottom: 10px">
+                        <input
+                          type="text"
+                          name="sponsor"
+                          value=""
+                          id="sponsor"
+                          class="form-control"
+                          placeholder="Sponsor Code (Optional)" />
+
+                        <span class="err"></span>
+                      </div>
+                    </div>
+
+                    <!-- <div class="col-md-6">
+                    <div class="form-group has-feedback">
+                      <input type="text" value=""  />
+    
+                      <span class="err"></span>
+                    </div>
+                  </div> -->
+                  </div>
+
+                  <!-- <div class="div-der"></div> -->
+                  <div class="row form-mb">
+                    <div class="col-md-4">
+                      <div class="form-group has-feedback">
+                        <input
+                          type="text"
+                          name="first_name"
+                          value=""
+                          id="first_name"
+                          class="form-control"
+                          placeholder="First Name" />
+
+                        <span class="err"></span>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group has-feedback">
+                        <input
+                          type="text"
+                          name="middle_name"
+                          value=""
+                          id="middle_name"
+                          class="form-control"
+                          placeholder="Middle Name (Optional)" />
+
+                        <span class="err"></span>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <!-- <div class="div-der"></div> -->
+                      <div class="form-group has-feedback">
+                        <input
+                          type="text"
+                          name="last_name"
+                          value=""
+                          id="last_name"
+                          class="form-control"
+                          placeholder="Last Name" />
+
+                        <span class="err"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  <div class="div-der"></div> -->
+                  <div class="form-group has-feedback">
+                    <input
+                      type="email"
+                      name="email"
+                      value=""
+                      id="email"
+                      class="form-control"
+                      placeholder="Email" />
+                    <span class="err"></span>
+                  </div>
+                  <!-- <div class="div-der"></div> -->
+                  <div class="row form-mb">
+                    <div class="col-md-6">
+                      <div class="form-group has-feedback pwd">
+                        <input
+                          type="password"
+                          name="password"
+                          value=""
+                          id="password"
+                          class="form-control"
+                          placeholder="Password" />
+                        <span
+                          toggle="#password"
+                          class="pwd-eyes fa fa-fw toggle-password fa-eye"></span>
+                        <span class="err"></span>
+                      </div>
+                    </div>
+                    <!-- <div class="div-der"></div> -->
+                    <div class="col-md-6">
+                      <div class="form-group has-feedback pwd">
+                        <input
+                          type="password"
+                          name="password_confirm"
+                          value=""
+                          id="password_confirm"
+                          class="form-control"
+                          placeholder="Confirm Password" />
+                        <span
+                          toggle="#password_confirm"
+                          class="pwd-eyes fa fa-fw confirm toggle-password fa-eye"></span>
+                        <span class="err"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="div-der"></div> -->
+                  <div class="fform-group has-feedback">
+                    <div class="iform-control-wrap text-left row">
+                      <div class="col-12 col-md-5 mb-3 mb-md-0 code-num">
+                        <div class="form-control-wrap form-control-select">
+                          <select class="form-control">
+                            <option>(+93) Afghanistan</option>
+                            <option>(+355) Albania</option>
+                            <option>(+213) Algeria</option>
+                            <option>(+1684) American Samoa</option>
+                            <option>(+376) Andorra</option>
+                            <option>(+244) Angola</option>
+                            <option>(+1264) Anguilla</option>
+                            <option>(+0) Antarctica</option>
+                            <option>(+1268) Antigua And Barbuda</option>
+                            <option>(+54) Argentina</option>
+                            <option>(+374) Armenia</option>
+                            <option>(+297) Aruba</option>
+                            <option>(+61) Australia</option>
+                            <option>(+43) Austria</option>
+                            <option>(+994) Azerbaijan</option>
+                            <option>(+1242) Bahamas The</option>
+                            <option>(+973) Bahrain</option>
+                            <option>(+880) Bangladesh</option>
+                            <option>(+1246) Barbados</option>
+                            <option>(+375) Belarus</option>
+                            <option>(+32) Belgium</option>
+                            <option>(+501) Belize</option>
+                            <option>(+229) Benin</option>
+                            <option>(+1441) Bermuda</option>
+                            <option>(+975) Bhutan</option>
+                            <option>(+591) Bolivia</option>
+                            <option>(+387) Bosnia and Herzegovina</option>
+                            <option>(+267) Botswana</option>
+                            <option>(+0) Bouvet Island</option>
+                            <option>(+55) Brazil</option>
+                            <option>
+                              (+246) British Indian Ocean Territory
+                            </option>
+                            <option>(+673) Brunei</option>
+                            <option>(+359) Bulgaria</option>
+                            <option>(+226) Burkina Faso</option>
+                            <option>(+257) Burundi</option>
+                            <option>(+855) Cambodia</option>
+                            <option>(+237) Cameroon</option>
+                            <option>(+1) Canada</option>
+                            <option>(+238) Cape Verde</option>
+                            <option>(+1345) Cayman Islands</option>
+                            <option>(+236) Central African Republic</option>
+                            <option>(+235) Chad</option>
+                            <option>(+56) Chile</option>
+                            <option>(+86) China</option>
+                            <option>(Keeling) Islands</option>
+                            <option>(+61) Christmas Island</option>
+                            <option>(+672) Cocos</option>
+                            <option>(+57) Colombia</option>
+                            <option>(+269) Comoros</option>
+                            <option>(+242) Republic Of The Congo</option>
+                            <option>
+                              (+242) Democratic Republic Of The Congo
+                            </option>
+                            <option>(+682) Cook Islands</option>
+                            <option>(+506) Costa Rica</option>
+                            <option>(Ivory Coast)</option>
+                            <option>(Hrvatska)</option>
+                            <option>(+53) Cuba</option>
+                            <option>(+357) Cyprus</option>
+                            <option>(+420) Czech Republic</option>
+                            <option>(+45) Denmark</option>
+                            <option>(+253) Djibouti</option>
+                            <option>(+1767) Dominica</option>
+                            <option>(+1809) Dominican Republic</option>
+                            <option>(+670) East Timor</option>
+                            <option>(+593) Ecuador</option>
+                            <option>(+20) Egypt</option>
+                            <option>(+503) El Salvador</option>
+                            <option>(+240) Equatorial Guinea</option>
+                            <option>(+291) Eritrea</option>
+                            <option>(+372) Estonia</option>
+                            <option>(+251) Ethiopia</option>
+                            <option>
+                              (+61) External Territories of Australia
+                            </option>
+                            <option>(+500) Falkland Islands</option>
+                            <option>(+298) Faroe Islands</option>
+                            <option>(+679) Fiji Islands</option>
+                            <option>(+358) Finland</option>
+                            <option>(+33) France</option>
+                            <option>(+594) French Guiana</option>
+                            <option>(+689) French Polynesia</option>
+                            <option>(+0) French Southern Territories</option>
+                            <option>(+241) Gabon</option>
+                            <option>(+220) Gambia The</option>
+                            <option>(+995) Georgia</option>
+                            <option>(+49) Germany</option>
+                            <option>(+233) Ghana</option>
+                            <option>(+350) Gibraltar</option>
+                            <option>(+30) Greece</option>
+                            <option>(+299) Greenland</option>
+                            <option>(+1473) Grenada</option>
+                            <option>(+590) Guadeloupe</option>
+                            <option>(+1671) Guam</option>
+                            <option>(+502) Guatemala</option>
+                            <option>(+44) Guernsey and Alderney</option>
+                            <option>(+224) Guinea</option>
+                            <option>(+245) Guinea-Bissau</option>
+                            <option>(+592) Guyana</option>
+                            <option>(+509) Haiti</option>
+                            <option>(+0) Heard and McDonald Islands</option>
+                            <option>(+504) Honduras</option>
+                            <option>(+852) Hong Kong S.A.R.</option>
+                            <option>(+36) Hungary</option>
+                            <option>(+354) Iceland</option>
+                            <option>(+91) India</option>
+                            <option>(+62) Indonesia</option>
+                            <option>(+98) Iran</option>
+                            <option>(+964) Iraq</option>
+                            <option>(+353) Ireland</option>
+                            <option>(+972) Israel</option>
+                            <option>(+39) Italy</option>
+                            <option>(+1876) Jamaica</option>
+                            <option>(+81) Japan</option>
+                            <option>(+44) Jersey</option>
+                            <option>(+962) Jordan</option>
+                            <option>(+7) Kazakhstan</option>
+                            <option>(+254) Kenya</option>
+                            <option>(+686) Kiribati</option>
+                            <option>(+850) Korea North</option>
+                            <option>(+82) Korea South</option>
+                            <option>(+965) Kuwait</option>
+                            <option>(+996) Kyrgyzstan</option>
+                            <option>(+856) Laos</option>
+                            <option>(+371) Latvia</option>
+                            <option>(+961) Lebanon</option>
+                            <option>(+266) Lesotho</option>
+                            <option>(+231) Liberia</option>
+                            <option>(+218) Libya</option>
+                            <option>(+423) Liechtenstein</option>
+                            <option>(+370) Lithuania</option>
+                            <option>(+352) Luxembourg</option>
+                            <option>(+853) Macau S.A.R.</option>
+                            <option>(+389) Macedonia</option>
+                            <option>(+261) Madagascar</option>
+                            <option>(+265) Malawi</option>
+                            <option>(+60) Malaysia</option>
+                            <option>(+960) Maldives</option>
+                            <option>(+223) Mali</option>
+                            <option>(+356) Malta</option>
+                            <option>(Isle of)</option>
+                            <option>(+692) Marshall Islands</option>
+                            <option>(+596) Martinique</option>
+                            <option>(+222) Mauritania</option>
+                            <option>(+230) Mauritius</option>
+                            <option>(+269) Mayotte</option>
+                            <option>(+52) Mexico</option>
+                            <option>(+691) Micronesia</option>
+                            <option>(+373) Moldova</option>
+                            <option>(+377) Monaco</option>
+                            <option>(+976) Mongolia</option>
+                            <option>(+1664) Montserrat</option>
+                            <option>(+212) Morocco</option>
+                            <option>(+258) Mozambique</option>
+                            <option>(+95) Myanmar</option>
+                            <option>(+264) Namibia</option>
+                            <option>(+674) Nauru</option>
+                            <option>(+977) Nepal</option>
+                            <option>(+599) Netherlands Antilles</option>
+                            <option>(+31) Netherlands The</option>
+                            <option>(+687) New Caledonia</option>
+                            <option>(+64) New Zealand</option>
+                            <option>(+505) Nicaragua</option>
+                            <option>(+227) Niger</option>
+                            <option>(+234) Nigeria</option>
+                            <option>(+683) Niue</option>
+                            <option>(+672) Norfolk Island</option>
+                            <option>(+1670) Northern Mariana Islands</option>
+                            <option>(+47) Norway</option>
+                            <option>(+968) Oman</option>
+                            <option>(+92) Pakistan</option>
+                            <option>(+680) Palau</option>
+                            <option>
+                              (+970) Palestinian Territory Occupied
+                            </option>
+                            <option>(+507) Panama</option>
+                            <option>(+675) Papua new Guinea</option>
+                            <option>(+595) Paraguay</option>
+                            <option>(+51) Peru</option>
+                            <option>(+63) Philippines</option>
+                            <option>(+0) Pitcairn Island</option>
+                            <option>(+48) Poland</option>
+                            <option>(+351) Portugal</option>
+                            <option>(+1787) Puerto Rico</option>
+                            <option>(+974) Qatar</option>
+                            <option>(+262) Reunion</option>
+                            <option>(+40) Romania</option>
+                            <option>(+70) Russia</option>
+                            <option>(+250) Rwanda</option>
+                            <option>(+290) Saint Helena</option>
+                            <option>(+1869) Saint Kitts And Nevis</option>
+                            <option>(+1758) Saint Lucia</option>
+                            <option>(+508) Saint Pierre and Miquelon</option>
+                            <option>
+                              (+1784) Saint Vincent And The Grenadines
+                            </option>
+                            <option>(+684) Samoa</option>
+                            <option>(+378) San Marino</option>
+                            <option>(+239) Sao Tome and Principe</option>
+                            <option>(+966) Saudi Arabia</option>
+                            <option>(+221) Senegal</option>
+                            <option>(+381) Serbia</option>
+                            <option>(+248) Seychelles</option>
+                            <option>(+232) Sierra Leone</option>
+                            <option>(+65) Singapore</option>
+                            <option>(+421) Slovakia</option>
+                            <option>(+386) Slovenia</option>
+                            <option>(+44) Smaller Territories of the UK</option>
+                            <option>(+677) Solomon Islands</option>
+                            <option>(+252) Somalia</option>
+                            <option>(+27) South Africa</option>
+                            <option>(+0) South Georgia</option>
+                            <option>(+211) South Sudan</option>
+                            <option>(+34) Spain</option>
+                            <option>(+94) Sri Lanka</option>
+                            <option>(+249) Sudan</option>
+                            <option>(+597) Suriname</option>
+                            <option>
+                              (+47) Svalbard And Jan Mayen Islands
+                            </option>
+                            <option>(+268) Swaziland</option>
+                            <option>(+46) Sweden</option>
+                            <option>(+41) Switzerland</option>
+                            <option>(+963) Syria</option>
+                            <option>(+886) Taiwan</option>
+                            <option>(+992) Tajikistan</option>
+                            <option>(+255) Tanzania</option>
+                            <option>(+66) Thailand</option>
+                            <option>(+228) Togo</option>
+                            <option>(+690) Tokelau</option>
+                            <option>(+676) Tonga</option>
+                            <option>(+1868) Trinidad And Tobago</option>
+                            <option>(+216) Tunisia</option>
+                            <option>(+90) Turkey</option>
+                            <option>(+7370) Turkmenistan</option>
+                            <option>(+1649) Turks And Caicos Islands</option>
+                            <option>(+688) Tuvalu</option>
+                            <option>(+256) Uganda</option>
+                            <option>(+380) Ukraine</option>
+                            <option>(+971) United Arab Emirates</option>
+                            <option>(+44) United Kingdom</option>
+                            <option>(+1) United States</option>
+                            <option>
+                              (+1) United States Minor Outlying Islands
+                            </option>
+                            <option>(+598) Uruguay</option>
+                            <option>(+998) Uzbekistan</option>
+                            <option>(+678) Vanuatu</option>
+                            <option>(Holy See)</option>
+                            <option>(+58) Venezuela</option>
+                            <option>(+84) Vietnam</option>
+                            <option>(British)</option>
+                            <option>(US)</option>
+                            <option>(+681) Wallis And Futuna Islands</option>
+                            <option>(+212) Western Sahara</option>
+                            <option>(+967) Yemen</option>
+                            <option>(+38) Yugoslavia</option>
+                            <option>(+260) Zambia</option>
+                            <option>(+263) Zimbabwe</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col pl-auto pl-md-0">
+                        <input
+                          type="text"
+                          name="phone"
+                          value=""
+                          id="phone"
+                          class="form-control"
+                          maxlength="10"
+                          minlength="10"
+                          placeholder="Phone" />
+                      </div>
+                    </div>
+                    <span class="err"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <ul class="custom-control-group g-3 align-center"></ul>
+                  </div>
+                  <!--form-group-->
+                  <div
+                    class="form-group"
+                    style="text-align: left; margin-top: 15px; display: none"
+                    id="accdiv">
+                    <div class="form-control-wrap form-control-select">
+                      <select
+                        class="form-control select2 w-p100"
+                        id="account_type"
+                        name="account_type"
+                        data-placeholder="Select a option"
+                        data-select2-id="fva-topics"
+                        tabindex="-1"
+                        aria-hidden="true">
+                        <option value="8">Traders</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- <div class="div-der"></div> -->
+
+                  <div class="row">
+                    <div class="col-12 agree-terms text-left">
+                      <div class="checkbox">
+                        <input
+                          type="checkbox"
+                          id="basic_checkbox_1"
+                          name="checkbox"
+                          class="form-control" />
+
+                        <label for="basic_checkbox_1"
+                          >I agree to the
+                          <a
+                            href="javascript:void(0)"
+                            data-toggle="modal"
+                            data-target="#Termsmodal"
+                            ><b>Terms &amp; Condition</b></a
+                          ></label
+                        >
+                        <span id="check_error" class="err"></span>
+                      </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-12 text-center">
+                      <button
+                        type="submit"
+                        class="btn btn-primary btn-block btn-lg mb-3 mt-2">
+                        Sign Up
+                      </button>
+                    </div>
+                    <!-- /.col -->
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 text-center">
+                      <p class="forget-text">
+                        Already have an account?
+                        <a href="login.html" class="signup-link">Login</a>
+                      </p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <!-- Bootstrap 4.1.3-->
+  <script src="assets/js/bootstrap.js"></script>
+</html>
